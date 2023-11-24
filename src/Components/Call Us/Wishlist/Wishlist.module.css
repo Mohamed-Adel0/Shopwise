@@ -1,0 +1,151 @@
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.parent .text {
+  width: 85%;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text h2 {
+  text-shadow: 4px 7px 6px brown;
+  font-style: oblique;
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.discraption {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.discraption .doubalText {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+.discraption h5 {
+  font-weight: 700;
+  font-size: 19px;
+}
+.card {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: 1px solid rgba(197, 195, 195, 0.363);
+  overflow: hidden;
+}
+.card .img {
+  width: 10rem;
+  height: 100%;
+  overflow: hidden;
+}
+.parent .img img {
+  height: 100%;
+  width: 100%;
+}
+.sale {
+  width: 20%;
+  height: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.card h5 {
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.paragraph:hover {
+  color: #dc3545;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.card span {
+  background-color: rgb(25, 135, 84);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.card .add {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+}
+.card button {
+  background-color: transparent;
+  border: none;
+  padding: 3px 6px;
+}
+.card .x:hover {
+  background-color: #dc3545;
+  border-radius: 50%;
+  padding: 1px 6px;
+  color: #fff;
+}
+.x {
+  font-size: 20px;
+}
+
+@media (max-width: 880px) {
+  .parent h5 {
+    font-size: 14px;
+  }
+  .parent button {
+    font-size: 14px;
+  }
+  .card span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .parent h5 {
+    font-size: 10px;
+  }
+  .parent button {
+    font-size: 10px;
+  }
+  .card span {
+    font-size: 5px;
+  }
+}
+@media (max-width: 540px) {
+  .parent h5 {
+    font-size: 6px;
+  }
+  .parent button {
+    font-size: 9px;
+  }
+  .card span {
+    font-size: 3px;
+  }
+}

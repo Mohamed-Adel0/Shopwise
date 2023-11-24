@@ -1,0 +1,193 @@
+.parent {
+  width: 100%;
+  height: 170vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  border-bottom: 1px solid #1111;
+}
+.container span {
+  color: #dc3545;
+}
+.card {
+  width: 250px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #a19595be;
+  border-radius: 10px;
+}
+.card a {
+  text-decoration: none;
+}
+.card .img {
+  width: 100%;
+  height: 65%;
+  border-radius: 10px;
+  position: relative;
+}
+.newproduct {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.newproduct a {
+  text-decoration: none;
+  border: 1px solid #24242427;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: #242424;
+}
+.newproduct button {
+  background-color: transparent;
+  border: 1px solid #2424242a;
+  padding: 5px 8px;
+}
+.newproduct button:hover {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: 0.6s;
+  border: 1px solid #fffffff1;
+}
+.newproduct a:hover {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: 0.6s;
+  border: 1px solid #fffffff1;
+}
+.bg {
+  position: absolute;
+  background-color: #2424244f;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s all;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bg .icons {
+  width: 88%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 25px;
+  text-align: center;
+}
+
+.icons button {
+  background-color: transparent;
+  border: none;
+  color: #242424;
+  font-size: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 20%;
+  height: 80%;
+  transition: 0.7s;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.card .text {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 5px;
+}
+
+.card .sallery {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.card .stars {
+  display: flex;
+  height: 25%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.stars p {
+  color: gold;
+}
+.stars p:nth-child(6) {
+  color: #242424;
+  padding: 0 15px;
+}
+
+/* Hover */
+
+.icons button:hover {
+  color: #fff;
+  background-color: #dc3545;
+  transition: 0.7s;
+}
+.icons button:nth-child(3):hover {
+  color: #fff !important;
+  background-color: #dc3545;
+  transition: 0.7s;
+}
+.bg:hover {
+  opacity: 1;
+  transition: 1s all;
+}
+.card h4:hover {
+  color: #dc3545;
+  transition: 0.6s;
+}
+.card h4 {
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+@media (max-width: 1238px) {
+  .parent {
+    height: auto;
+    padding: 25px 0;
+  }
+}

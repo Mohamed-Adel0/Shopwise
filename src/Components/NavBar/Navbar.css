@@ -1,0 +1,33 @@
+.collapse {
+  flex-grow: 0;
+  gap: 100px !important;
+}
+.container .nav-link {
+  color: #242424;
+  font-weight: 400;
+  justify-content: space-evenly !important;
+}
+.container {
+  height: 100% !important;
+}
+.navbar {
+  height: 100% !important;
+}
+.nav {
+  z-index: 10;
+}
+.container .active {
+  background-color: #dc3545;
+  color: #fff;
+}
+.container a {
+  text-decoration: none;
+  color: #242424;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.container .links {
+  width: 100%;
+  border: 3px solid green;
+}

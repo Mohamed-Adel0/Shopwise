@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Something items immportant for style */
+.card p {
+  font-size: 14px;
+  color: #ffffff80;
+}
+.card h4 {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardx h4 {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card p,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+/* End the Line */
+
+.parent {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222222;
+  overflow: hidden;
+}
+.container {
+  width: 90%;
+  height: 82%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.container .cards {
+  width: 350px;
+  height: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.cards .card {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  gap: 15px;
+  color: #fff;
+  line-height: 15px;
+}
+
+.cardx {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  text-align: start;
+  gap: 5px;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-bottom: 5px;
+}
+.cardx:nth-child(2) {
+  height: 70%;
+  line-height: 0;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.cardx:nth-child(3) {
+  height: 15%;
+}
+.cardx .img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.img .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.6s;
+}
+.bg:hover {
+  background-color: #dc354673;
+  transition: 0.6s;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card:nth-child(2) {
+  justify-content: flex-start;
+}
+
+footer {
+  height: 18%;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .containerfooter {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.containerfooter .icons {
+  width: 300px;
+  height: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.icons:nth-child(2) {
+  width: 400px;
+  color: #ffffffd5;
+}
+.icons h4 {
+  font-size: 14px;
+  line-height: 20px;
+}
+span {
+  color: #dc3545;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.icons a:hover {
+  transform: scale(1.3) rotate(360deg);
+  color: #dc3545;
+  transition: 0.6s;
+}
+
+@media (max-width: 1201px) {
+  .parent {
+    height: auto;
+    padding-top: 15px;
+  }
+  .cards {
+    width: 320px !important;
+  }
+  .card {
+    height: 200px !important;
+  }
+
+  .img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+@media (max-width: 1107px) {
+  .cards {
+    width: 290px !important;
+  }
+  .card {
+    height: 170px !important;
+  }
+
+  .img {
+    width: 70px !important;
+    height: 66px !important;
+  }
+}
+@media (max-width: 1007px) {
+  .cards {
+    width: 270px !important;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 240px !important;
+    height: 170px !important;
+  }
+}
