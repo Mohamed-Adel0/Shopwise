@@ -25,7 +25,7 @@ function App() {
       <Loading />
       <NavBar />
       <Routes>
-        <Route path="/mohamed-adel0.github.io/Shopwise/" element={<Home />} />
+        <Route path="https://mohamed-adel0.github.io/Shopwise/" element={<Home />} />
         <Route path="contact" element={<Contact />} />
         <Route path="login" element={<LoginUp />} />
         <Route path=":id" element={<RebackData />} />
